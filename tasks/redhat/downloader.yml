@@ -10,6 +10,6 @@
   yum: name=https://dl.fedoraproject.org/pub/epel/epel-release-latest-{{ ansible_distribution_major_version }}.noarch.rpm
   when: res.matched == 0
 
-- name: install axel downloader
+- name: install aria2 downloader
   become: yes
-  yum: name=axel
+  yum: name=aria2
